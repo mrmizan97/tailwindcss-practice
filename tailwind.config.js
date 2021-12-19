@@ -1,12 +1,18 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  mode: "jit",
+  purge: ["./public/**/*.{html,js}"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        myColor: {
+          300: "#d5d5d5",
+        },
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
- 
+};
